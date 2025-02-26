@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Dinas Pendidikan dan Kebudayaan Kota Palu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script>
+        function toggleMenu(menuId) {
+            document.getElementById(menuId).classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body class="font-roboto">
+    <header class="relative">
+        <img alt="Background image of a building" class="w-full h-96 object-cover" src="header.png"/>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+            <nav class="absolute top-0 left-0 right-0 flex justify-between items-center p-4">
+                <img alt="Logo" class="h-12" src="disdikbud 1.png"/>
+                <ul class="flex space-x-4">
+                    <li><button onclick="toggleMenu('profil-menu')" class="text-white hover:text-cyan-500">Profil</button></li>
+                    <li><button onclick="toggleMenu('layanan-menu')" class="text-white hover:text-cyan-500">Layanan</button></li>
+                    <li><button onclick="toggleMenu('publikasi-menu')" class="text-white hover:text-cyan-500">Publikasi</button></li>
+                    <li><button onclick="toggleMenu('pengaduan-menu')" class="text-white hover:text-cyan-500">Pengaduan</button></li>
+                </ul>
+            </nav>
+            <h3 class="text-1xl md:text-5xl font-bold mt-16">PEJABAT DINAS PENDIDIKAN DAN KEBUDAYAAN KOTA PALU</h3>
+            <p class="mt-2 text-sm md:text-lg">Menyajikan informasi pejabat Dinas Pendidikan dan Kebudayaan Kota Palu</p>        
+        </div>
+    </header>
+    
+    <div id="profil-menu" class="hidden fixed inset-0 bg-white p-8 overflow-auto">
+        <div class="flex justify-end">
+            <button onclick="toggleMenu('profil-menu')" class="text-xl">&times;</button>
+        </div>
+        <h2 class="text-2xl font-bold">Profil</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Profil Pejabat</h3><p>Menyajikan informasi mengenai profil Kadisdik dan Sekdisdik Kota Palu</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Brand Identity</h3><p>Menyajikan informasi mengenai Logo, Maskot, Jingle dan Ringtone</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Sejarah</h3><p>Menyajikan informasi sejarah  Dinas Pendidikan dan Kebudayaan Kota Palu</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Sekretariat</h3><p>Profil Sekretariat</p></div>
+        </div>
+    </div>
+    
+    <div id="layanan-menu" class="hidden fixed inset-0 bg-white p-8 overflow-auto">
+        <div class="flex justify-end">
+            <button onclick="toggleMenu('layanan-menu')" class="text-xl">&times;</button>
+        </div>
+        <h2 class="text-2xl font-bold">Layanan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang PAUD</h3><p>Informasi layanan untuk bidang PAUD</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang SD</h3><p>Informasi layanan untuk bidang SD</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang SMP</h3><p>Informasi layanan untuk bidang SMP</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang Ketenagaan</h3><p>Informasi layanan untuk bidang Ketenagaan</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang Kebudayaan</h3><p>Informasi layanan untuk bidang Kebudayaan</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Bidang Sub Sekre</h3><p>Informasi layanan untuk bidang Sub Sekre</p></div>
+        </div>
+    </div>
+    
+    <div id="publikasi-menu" class="hidden fixed inset-0 bg-white p-8 overflow-auto">
+        <div class="flex justify-end">
+            <button onclick="toggleMenu('publikasi-menu')" class="text-xl">&times;</button>
+        </div>
+        <h2 class="text-2xl font-bold">Publikasi</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Berita Artikel</h3><p>Menyajikan informasi seputar pendidikan di Kota Palu</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Kalender Pendidikan</h3><p>Menyajikan informasi kalender pendidikan</p></div>
+            <div class="bg-gray-200 p-4 rounded-lg"><h3 class="font-bold">Dokumentasi</h3><p>Menyajikan dokumentasi</p></div>
+        </div>
+    </div>
+    
+    <div id="pengaduan-menu" class="hidden fixed inset-0 bg-white p-8 overflow-auto">
+        <div class="flex justify-end">
+            <button onclick="toggleMenu('pengaduan-menu')" class="text-xl">&times;</button>
+        </div>
+        <h2 class="text-2xl font-bold">Pengaduan</h2>
+        <p>Saluran pengaduan untuk masyarakat.</p>
+    </div>
+    <div class="overflow-x-auto">
+        <div class="flex flex-nowrap border-b border-gray-200">
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" aria-current="true" onclick="showTab('tab-1')">KEPALA DINAS PENDIDIKAN</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('tab-2')">SEKRETARIS DINAS PENDIDIKAN</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('tab-3')">KABID 1</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('tab-4')">KABID 2</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('kabid-3')">KABID 3</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('kabid-4')">KABID 4</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('kabid-5')">KABID 5</button>
+          <button class="bg-white py-4 px-6 border-b-4 border-transparent hover:border-blue-500" onclick="showTab('kabid-6')">KABID 6</button>
+        </div>
+        <div class="tab-content mt-4">
+          <div class="tab-pane active" id="tab-1">
+            <h3 class="font-bold">Hardi, S.Pd., M.Pd. </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <h3 class="font-bold">Tab 2 Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <h3 class="font-bold">Tab 3 Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <img src="https://via.placeholder.com/200x200" alt="Image">
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <h3 class="font-bold">Tab 4 Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <table>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tab-pane" id="tab-5">
+            <h3 class="font-bold">Tab 5 Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <form>
+              <input type="text" placeholder="Input field">
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-pane');
+            tabs.forEach(tab => tab.classList.add('hidden')); 
+            document.getElementById(tabId).classList.remove('hidden'); 
+    
+            const buttons = document.querySelectorAll('.flex button');
+            buttons.forEach(button => button.classList.remove('border-blue-500'));
+            document.querySelector(`.flex button[onclick="showTab('${tabId}')"]`).classList.add('border-blue-500');
+        }
+    
+        // Set default active tab on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            showTab('tab-1');
+        });
+    </script>    
+    <footer class="bg-gray-200 py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">Copyright © Dinas Pendidikan dan Kebudayaan Kota Palu All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
